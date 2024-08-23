@@ -45,6 +45,7 @@ while true; do
       ;;
     2 )
       cp ~/.bashrc ./
+      cp ~/.conkyrc ./
       cp ~/.gtkrc-2.0 ./
       cp ~/.xinitrc ./
       cp ~/.Xresources ./
@@ -52,6 +53,7 @@ while true; do
       ;;
     3 )
       cp .bashrc ~/
+      cp .conkyrc ~/
       cp .gtkrc-2.0 ~/
       cp .xinitrc ~/
       cp .Xresources ~/
