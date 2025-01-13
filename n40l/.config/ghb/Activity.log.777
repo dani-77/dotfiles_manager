@@ -1,0 +1,308 @@
+HandBrake 20240810132000-77f199ab0 (2024081401)
+OS: CRUX
+Kernel: Linux 6.6.21 (x86_64)
+CPU: Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz x 4
+Install Dir: /usr/bin
+Config Dir:  /home/dani77/.config/ghb
+_______________________________
+
+[14:20:55] Compile-time hardening features are enabled
+[14:20:55] nvenc: version 12.2 is available
+[14:20:55] nvdec: is not compiled into this build
+[14:20:55] hb_init: starting libhb thread
+[14:20:55] hb_init: starting libhb thread
+[14:20:55] hb_init: starting libhb thread
+[14:20:55] gtkgui: Failed to read presets file, initializing new presets...
+
+(fr.handbrake.ghb:777): GLib-CRITICAL **: 14:20:56.963: g_variant_get_type: assertion 'value != NULL' failed
+
+(fr.handbrake.ghb:777): GLib-CRITICAL **: 14:20:56.963: g_variant_type_is_subtype_of: assertion 'g_variant_type_check (type)' failed
+
+(fr.handbrake.ghb:777): GLib-CRITICAL **: 14:20:56.963: g_variant_get_boolean: assertion 'g_variant_is_of_type (value, G_VARIANT_TYPE_BOOLEAN)' failed
+
+(fr.handbrake.ghb:777): GLib-CRITICAL **: 14:20:56.963: g_variant_unref: assertion 'value != NULL' failed
+[14:21:17] gtkgui: Excluded extension jpg
+[14:21:17] gtkgui: Excluded extension png
+[14:21:17] gtkgui: Excluded extension srt
+[14:21:17] gtkgui: Excluded extension ssa
+[14:21:17] gtkgui: Excluded extension ass
+[14:21:17] gtkgui: Excluded extension txt
+[14:21:17] CPU: Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz
+[14:21:17]  - Intel microarchitecture Ivy Bridge
+[14:21:17]  - logical processor count: 4
+[14:21:17] hb_scan: path=/home/dani77/Nextcloud/Movies/IMG_2691.MP4, title_index=0
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/dani77/Nextcloud/Movies/IMG_2691.MP4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    creation_time   : 2020-03-30T17:54:17.000000Z
+  Duration: 00:00:47.27, start: 0.000000, bitrate: 6487 kb/s
+  Stream #0:0[0x1](eng): Video: h264 (Baseline) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 6437 kb/s, SAR 1:1 DAR 16:9, 29.69 fps, 29.92 tbr, 90k tbn (default)
+      Metadata:
+        creation_time   : 2020-03-30T17:54:17.000000Z
+        handler_name    : VideoHandle
+        vendor_id       : [0][0][0][0]
+      Side data:
+        displaymatrix: rotation of -90.00 degrees
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 48 kb/s (default)
+      Metadata:
+        creation_time   : 2020-03-30T17:54:17.000000Z
+        handler_name    : SoundHandle
+        vendor_id       : [0][0][0][0]
+[14:21:17] scan: decoding previews for title 1
+[14:21:17] scan: audio 0x1: aac, rate=48000Hz, bitrate=48000 English (AAC LC, 2.0 ch, 48 kbps)
+[14:21:17] Auto-Rotating video 270 degrees
+[14:21:17] scan: 10 previews, 720x1280, 29.689 fps, autocrop = 0/0/0/0, aspect 1:1.78, PAR 1:1, color profile: 1-1-1, chroma location: left
+[14:21:17] libhb: scan thread found 1 valid title(s)
+[14:21:26] gtkgui: Preset: /General/Fast 1080p30
+[14:21:26] Starting work at: Fri Aug 23 14:21:26 2024
+
+[14:21:26] 1 job(s) to process
+[14:21:26] json job:
+{
+    "Audio": {
+        "AudioList": [
+            {
+                "Bitrate": 160,
+                "CompressionLevel": -1.0,
+                "DRC": 0.0,
+                "DitherMethod": "auto",
+                "Encoder": "fdk_aac",
+                "Gain": 0.0,
+                "Mixdown": "stereo",
+                "NormalizeMixLevel": false,
+                "PresetEncoder": "fdk_aac",
+                "Quality": -3.0,
+                "Samplerate": 0,
+                "Track": 0
+            }
+        ],
+        "CopyMask": [
+            "copy:aac"
+        ],
+        "FallbackEncoder": "fdk_aac"
+    },
+    "Destination": {
+        "AlignAVStart": true,
+        "ChapterList": [
+            {
+                "Duration": {
+                    "Hours": 0,
+                    "Minutes": 0,
+                    "Seconds": 47,
+                    "Ticks": 4254654
+                },
+                "Name": ""
+            }
+        ],
+        "ChapterMarkers": false,
+        "File": "/home/dani77/Videos/IMG_2691.mp4",
+        "InlineParameterSets": false,
+        "Mux": "m4v",
+        "Options": {
+            "IpodAtom": false,
+            "Optimize": false
+        }
+    },
+    "Filters": {
+        "FilterList": [
+            {
+                "ID": 4,
+                "Settings": {
+                    "block-height": "16",
+                    "block-thresh": "40",
+                    "block-width": "16",
+                    "filter-mode": "2",
+                    "mode": "3",
+                    "motion-thresh": "1",
+                    "spatial-metric": "2",
+                    "spatial-thresh": "1"
+                }
+            },
+            {
+                "ID": 6,
+                "Settings": {
+                    "mode": "7"
+                }
+            },
+            {
+                "ID": 11,
+                "Settings": {
+                    "mode": 2,
+                    "rate": "27000000/900000"
+                }
+            },
+            {
+                "ID": 20,
+                "Settings": {
+                    "crop-bottom": 0,
+                    "crop-left": 0,
+                    "crop-right": 0,
+                    "crop-top": 0,
+                    "height": 1080,
+                    "width": 720
+                }
+            }
+        ]
+    },
+    "Metadata": {},
+    "PAR": {
+        "Den": 32,
+        "Num": 27
+    },
+    "SequenceID": 0,
+    "Source": {
+        "Angle": 0,
+        "HWDecode": 0,
+        "Path": "/home/dani77/Nextcloud/Movies/IMG_2691.MP4",
+        "Range": {
+            "End": 1,
+            "Start": 1,
+            "Type": "chapter"
+        },
+        "Title": 1
+    },
+    "Subtitle": {
+        "Search": {
+            "Burn": true,
+            "Default": false,
+            "Enable": false,
+            "Forced": false
+        },
+        "SubtitleList": []
+    },
+    "Video": {
+        "ChromaLocation": 1,
+        "ColorInputFormat": 0,
+        "ColorMatrix": 1,
+        "ColorOutputFormat": 0,
+        "ColorPrimaries": 1,
+        "ColorRange": 1,
+        "ColorTransfer": 1,
+        "Encoder": "x264",
+        "HardwareDecode": 0,
+        "Level": "4.0",
+        "MultiPass": false,
+        "Options": "",
+        "Preset": "fast",
+        "Profile": "main",
+        "QSV": {
+            "AdapterIndex": 0,
+            "AsyncDepth": 0,
+            "Decode": false
+        },
+        "Quality": 22.0,
+        "Tune": "",
+        "Turbo": false
+    }
+}
+[14:21:26] CPU: Intel(R) Core(TM) i7-3520M CPU @ 2.90GHz
+[14:21:26]  - Intel microarchitecture Ivy Bridge
+[14:21:26]  - logical processor count: 4
+[14:21:26] hb_scan: path=/home/dani77/Nextcloud/Movies/IMG_2691.MP4, title_index=1
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/home/dani77/Nextcloud/Movies/IMG_2691.MP4':
+  Metadata:
+    major_brand     : mp42
+    minor_version   : 0
+    compatible_brands: isommp42
+    creation_time   : 2020-03-30T17:54:17.000000Z
+  Duration: 00:00:47.27, start: 0.000000, bitrate: 6487 kb/s
+  Stream #0:0[0x1](eng): Video: h264 (Baseline) (avc1 / 0x31637661), yuv420p(progressive), 1280x720, 6437 kb/s, SAR 1:1 DAR 16:9, 29.69 fps, 29.92 tbr, 90k tbn (default)
+      Metadata:
+        creation_time   : 2020-03-30T17:54:17.000000Z
+        handler_name    : VideoHandle
+        vendor_id       : [0][0][0][0]
+      Side data:
+        displaymatrix: rotation of -90.00 degrees
+  Stream #0:1[0x2](eng): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 48 kb/s (default)
+      Metadata:
+        creation_time   : 2020-03-30T17:54:17.000000Z
+        handler_name    : SoundHandle
+        vendor_id       : [0][0][0][0]
+[14:21:26] scan: decoding previews for title 1
+[14:21:26] scan: audio 0x1: aac, rate=48000Hz, bitrate=48000 English (AAC LC, 2.0 ch, 48 kbps)
+[14:21:26] Auto-Rotating video 270 degrees
+[14:21:26] scan: 10 previews, 720x1280, 29.689 fps, autocrop = 0/0/0/0, aspect 1:1.78, PAR 1:1, color profile: 1-1-1, chroma location: left
+[14:21:26] libhb: scan thread found 1 valid title(s)
+[14:21:26] Starting Task: Encoding Pass
+[14:21:26] job configuration:
+[14:21:26]  * source
+[14:21:26]    + /home/dani77/Nextcloud/Movies/IMG_2691.MP4
+[14:21:26]    + title 1, chapter(s) 1 to 1
+[14:21:26]    + container: mov,mp4,m4a,3gp,3g2,mj2
+[14:21:26]    + data rate: 6487 kbps
+[14:21:26]  * destination
+[14:21:26]    + /home/dani77/Videos/IMG_2691.mp4
+[14:21:26]    + container: MPEG-4 (libavformat)
+[14:21:26]      + align initial A/V stream timestamps
+[14:21:26]  * video track
+[14:21:26]    + decoder: h264 8-bit (yuv420p)
+[14:21:26]      + bitrate 6437 kbps
+[14:21:26]    + filters
+[14:21:26]      + Comb Detect (mode=3:spatial-metric=2:motion-thresh=1:spatial-thresh=1:filter-mode=2:block-thresh=40:block-width=16:block-height=16)
+[14:21:26]      + Decomb (mode=39)
+[14:21:26]      + Framerate Shaper (mode=2:rate=27000000/900000)
+[14:21:26]        + frame rate: 29.689 fps -> peak rate limited to 30.000 fps
+[14:21:26]      + Crop and Scale (width=720:height=1080:crop-top=0:crop-bottom=0:crop-left=0:crop-right=0)
+[14:21:26]        + source: 720 * 1280, crop (0/0/0/0): 720 * 1280, scale: 720 * 1080
+[14:21:26]    + Output geometry
+[14:21:26]      + storage dimensions: 720 x 1080
+[14:21:26]      + pixel aspect ratio: 27 : 32
+[14:21:26]      + display dimensions: 607 x 1080
+[14:21:26]    + encoder: H.264 (libx264)
+[14:21:26]      + preset:  fast
+[14:21:26]      + profile: main
+[14:21:26]      + level:   4.0
+[14:21:26]      + quality: 22.00 (RF)
+[14:21:26]      + color profile: 1-1-1
+[14:21:26]      + color range: tv
+[14:21:26]      + chroma location: left
+[14:21:26]  * audio track 1
+[14:21:26]    + decoder: English (AAC LC, 2.0 ch, 48 kbps) (track 1, id 0x1)
+[14:21:26]      + bitrate: 48 kbps, samplerate: 48000 Hz
+[14:21:26]    + mixdown: Stereo
+[14:21:26]    + encoder: AAC (libfdk_aac)
+[14:21:26]      + bitrate: 160 kbps, samplerate: 48000 Hz
+[14:21:26] sync: expecting 1403 video frames
+[14:21:26] encx264: min-keyint: 30, keyint: 300
+[14:21:26] encx264: encoding at constant RF 22.000000
+[14:21:26] encx264: unparsed options: level=4.0:ref=2:8x8dct=0:weightp=1:subme=6:vbv-bufsize=25000:vbv-maxrate=20000:rc-lookahead=30
+x264 [info]: using SAR=27/32
+x264 [info]: using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX
+x264 [info]: profile Main, level 4.0, 4:2:0, 8-bit
+[14:21:26] Auto-Rotating video 270 degrees
+[14:21:26] sync: first pts video is 0
+[14:21:26] sync: Chapter 1 at frame 1 time 0
+[14:21:26] sync: first pts audio 0x1 is 0
+[14:21:36] work: average encoding speed for job is 36.276180 fps
+[14:21:36] comb detect: heavy 0 | light 6 | uncombed 356 | total 362
+[14:21:36] decomb: deinterlaced 0 | blended 6 | unfiltered 347 | total 353
+[14:21:36] vfr: 344 frames output, 0 dropped and 0 duped for CFR/PFR
+[14:21:36] vfr: lost time: 0 (0 frames)
+[14:21:36] vfr: gained time: 0 (0 frames) (0 not accounted for)
+[14:21:37] aac-decoder done: 660 frames, 0 decoder errors
+[14:21:37] h264-decoder done: 416 frames, 0 decoder errors
+[14:21:37] sync: got 376 frames, 1403 expected
+[14:21:37] sync: framerate min 29.689 fps, max 30.323 fps, avg 29.947 fps
+x264 [info]: frame I:3     Avg QP:22.85  size: 42164
+x264 [info]: frame P:92    Avg QP:23.42  size: 23088
+x264 [info]: frame B:200   Avg QP:25.72  size:  8353
+x264 [info]: consecutive B-frames:  6.7%  4.0% 10.1% 79.2%
+x264 [info]: mb I  I16..4: 24.5%  0.0% 75.5%
+x264 [info]: mb P  I16..4: 10.0%  0.0% 10.8%  P16..4: 42.2% 21.2%  9.3%  0.0%  0.0%    skip: 6.4%
+x264 [info]: mb B  I16..4:  5.0%  0.0%  1.7%  B16..8: 38.4% 12.4%  0.6%  direct:14.9%  skip:27.1%  L0:48.9% L1:43.9% BI: 7.2%
+x264 [info]: coded y,uvDC,uvAC intra: 43.6% 50.7% 8.9% inter: 22.2% 23.3% 0.4%
+x264 [info]: i16 v,h,dc,p: 31% 38% 14% 16%
+x264 [info]: i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 34% 17%  5%  5%  4%  7%  4%  7%
+x264 [info]: i8c dc,h,v,p: 57% 25% 15%  3%
+x264 [info]: Weighted P-Frames: Y:13.0% UV:4.3%
+x264 [info]: ref P L0: 81.2% 18.8%
+x264 [info]: ref B L0: 87.5% 12.5%
+x264 [info]: ref B L1: 96.1%  3.9%
+x264 [info]: kb/s:3183.06
+[14:21:37] mux: track 0, 295 frames, 3921055 bytes, 2503.51 kbps, fifo 512
+[14:21:37] mux: track 1, 588 frames, 250881 bytes, 160.18 kbps, fifo 1024
+[14:21:37] Finished work at: Fri Aug 23 14:21:37 2024
+
+[14:21:37] libhb: work result = 1

@@ -1,0 +1,19 @@
+# vim: filetype=neomuttrc
+# muttrc file for account daniazevedo77@e.email
+set realname = "daniazevedo77"
+set from = "daniazevedo77@e.email"
+set sendmail = "msmtp -a daniazevedo77@e.email"
+alias me daniazevedo77 <daniazevedo77@e.email>
+set folder = "/home/dani77/.local/share/mail/daniazevedo77@e.email"
+set header_cache = "/home/dani77/.cache/mutt-wizard/daniazevedo77_e.email/headers"
+set message_cachedir = "/home/dani77/.cache/mutt-wizard/daniazevedo77_e.email/bodies"
+set mbox_type = Maildir
+set hostname = "e.email"
+source /usr/share/mutt-wizard/switch.muttrc
+set spoolfile = "+INBOX"
+set postponed = "+Drafts"
+set trash = "+Trash"
+set record = "+Sent"
+
+macro index o "<shell-escape>mailsync daniazevedo77@e.email<enter>" "sync daniazevedo77@e.email"
+mailboxes "=Archive" "=Drafts" "=Queue" "=Notes" "=Rascunhos" "=Sent" "=Spam" "=Enviados" "=Trash" "=INBOX"

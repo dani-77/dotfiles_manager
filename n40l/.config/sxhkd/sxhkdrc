@@ -1,0 +1,22 @@
+alt + shift + Return
+	st
+alt + w
+	epiphany
+alt + m
+      	geary
+alt + f
+	pcmanfm
+alt + d
+	rofi -show drun
+super + space
+	jgmenu_run
+alt + s
+      	dsearch
+alt + h
+      	dfm
+alt + p
+      	scrot
+alt + x
+        rofi -show power-menu -modi power-menu:rofi-power-menu	
+alt + r
+	gmrun

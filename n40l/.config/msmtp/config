@@ -1,0 +1,22 @@
+account daniazevedo77@e.email
+host mail.ecloud.global
+port 465
+from daniazevedo77@e.email
+user daniazevedo77@e.email
+passwordeval "pass daniazevedo77@e.email"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/dani77/.local/state/msmtp/msmtp.log
+tls_starttls off
+account daniazevedo77@posteo.net
+host posteo.de
+port 465
+from daniazevedo77@posteo.net
+user daniazevedo77@posteo.net
+passwordeval "pass daniazevedo77@posteo.net"
+auth on
+tls on
+tls_trust_file	/etc/ssl/certs/ca-certificates.crt
+logfile /home/dani77/.local/state/msmtp/msmtp.log
+tls_starttls off

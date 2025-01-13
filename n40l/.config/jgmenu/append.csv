@@ -1,0 +1,5 @@
+^sep()
+Exit,^checkout(exit),system-shutdown
+^tag(exit)
+Reboot,reboot,system-reboot
+Poweroff,poweroff,system-shutdown
