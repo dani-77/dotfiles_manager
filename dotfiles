@@ -22,8 +22,10 @@ while true; do
     --cancel-label "Exit" \
     --menu "Please select:" $HEIGHT $WIDTH 4 \
     "1" "Inspect" \
-    "2" "Backup" \
-    "3" "Install" \
+    "2" "Backup Host" \
+    "3" "Backup Global" \
+    "4" "Install Host" \
+    "5" "Install Global" \
     2>&1 1>&3)
   exit_status=$?
   exec 3>&-
@@ -54,6 +56,15 @@ while true; do
       cp -r ~/.config/ ./$HOSTNAME
       ;;
     3 )
+      cp ~/.bashrc ./
+      cp ~/.conkyrc ./
+      cp ~/.conkyrc1 ./
+      cp ~/.gtkrc-2.0 ./
+      cp ~/.xinitrc ./
+      cp ~/.Xresources ./
+      cp -r ~/.config/ ./
+      ;;
+    4 )
       cp ./$HOSTNAME/.bashrc ~/
       cp ./$HOSTNAME/.conkyrc ~/
       cp ./$HOSTNAME/.conkyrc1 ~/
@@ -61,6 +72,15 @@ while true; do
       cp ./$HOSTNAME/.xinitrc ~/
       cp ./$HOSTNAME/.Xresources ~/
       cp -r ./$HOSTNAME/.config/ ~/
+      ;;
+    5 )
+      cp .bashrc ~/
+      cp .conkyrc ~/
+      cp .conkyrc1 ~/
+      cp .gtkrc-2.0 ~/
+      cp .xinitrc ~/
+      cp .Xresources ~/
+      cp -r .config/ ~/
       ;;
   esac
 done
