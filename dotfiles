@@ -47,6 +47,7 @@ while true; do
       mkdir $HOSTNAME
       cp ~/.bashrc ./$HOSTNAME
       cp ~/.conkyrc ./$HOSTNAME
+      cp ~/.conkyrc1 ./$HOSTNAME
       cp ~/.gtkrc-2.0 ./$HOSTNAME
       cp ~/.xinitrc ./$HOSTNAME
       cp ~/.Xresources ./$HOSTNAME
@@ -55,6 +56,7 @@ while true; do
     3 )
       cp ./$HOSTNAME/.bashrc ~/
       cp ./$HOSTNAME/.conkyrc ~/
+      cp ./$HOSTNAME/.conkyrc1 ~/
       cp ./$HOSTNAME/.gtkrc-2.0 ~/
       cp ./$HOSTNAME/.xinitrc ~/
       cp ./$HOSTNAME/.Xresources ~/
