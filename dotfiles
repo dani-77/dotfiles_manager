@@ -48,8 +48,7 @@ while true; do
     2 )
       mkdir $HOSTNAME
       cp ~/.bashrc ./$HOSTNAME
-      cp ~/.conkyrc ./$HOSTNAME
-      cp ~/.conkyrc1 ./$HOSTNAME
+      cp ~/.conkyr* ./$HOSTNAME
       cp ~/.gtkrc-2.0 ./$HOSTNAME
       cp ~/.xinitrc ./$HOSTNAME
       cp ~/.Xresources ./$HOSTNAME
@@ -57,8 +56,7 @@ while true; do
       ;;
     3 )
       cp ~/.bashrc ./
-      cp ~/.conkyrc ./
-      cp ~/.conkyrc1 ./
+      cp ~/.conkyr* ./
       cp ~/.gtkrc-2.0 ./
       cp ~/.xinitrc ./
       cp ~/.Xresources ./
@@ -66,8 +64,7 @@ while true; do
       ;;
     4 )
       cp ./$HOSTNAME/.bashrc ~/
-      cp ./$HOSTNAME/.conkyrc ~/
-      cp ./$HOSTNAME/.conkyrc1 ~/
+      cp ./$HOSTNAME/.conkyr* ~/
       cp ./$HOSTNAME/.gtkrc-2.0 ~/
       cp ./$HOSTNAME/.xinitrc ~/
       cp ./$HOSTNAME/.Xresources ~/
@@ -75,8 +72,7 @@ while true; do
       ;;
     5 )
       cp .bashrc ~/
-      cp .conkyrc ~/
-      cp .conkyrc1 ~/
+      cp .conkyr* ~/
       cp .gtkrc-2.0 ~/
       cp .xinitrc ~/
       cp .Xresources ~/
